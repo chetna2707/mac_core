@@ -1,16 +1,17 @@
-# 32-Bit MAC Core — RTL-to-GDSII Physical Design Flow (SkyWater 130nm)
+# 8-Bit MAC Core — RTL-to-GDSII Physical Design Flow (SkyWater 130nm)
 
-This repository contains the complete open-source ASIC physical design implementation for a 32-bit Multiply-Accumulate (MAC) core (`mac_core`) targeted for the **SkyWater 130nm HD PDK (`sky130_fd_sc_hd`)**.
+This repository contains the complete open-source ASIC physical design implementation for an 8-bit × 8-bit pipelined Multiply-Accumulate (MAC) core (`mac_core`) with a 16-bit multiplier output and 20-bit accumulator, targeted for the **SkyWater 130nm HD PDK (`sky130_fd_sc_hd`)**.
 
-The backend flow executes Verilog RTL logic synthesis using Yosys, performs floorplanning, placement, clock tree synthesis (CTS), and multi-layer detailed routing in OpenROAD, performs Static Timing Analysis (STA), and exports the final tapeout GDSII stream using KLayout's Python API.
+The backend flow executes Verilog RTL logic synthesis using Yosys, performs floorplanning, placement, clock tree synthesis (CTS), and multi-layer detailed routing in OpenROAD, performs Static Timing Analysis (STA), and exports the final GDSII layout using KLayout's Python API.
 
 ---
+
 
 ## Technical Specifications & Physical Metrics
 
 | Parameter | Value |
 | --- | --- |
-| Design Top Module | mac_core (32-Bit Multiply-Accumulate) |
+| Design Top Module | mac_core (8×8 Pipelined MAC) |
 | Technology Node | SkyWater 130nm (sky130A) |
 | Standard Cell Library | sky130_fd_sc_hd (High Density) |
 | Total Placed Components | 960 cells (413 active logic + 547 filler cells) |
