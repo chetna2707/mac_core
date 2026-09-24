@@ -1,4 +1,3 @@
-```
 # 32-Bit MAC Core — RTL-to-GDSII Physical Design Flow (SkyWater 130nm)
 
 This repository contains the complete open-source ASIC physical design implementation for a 32-bit Multiply-Accumulate (MAC) core (`mac_core`) targeted for the **SkyWater 130nm HD PDK (`sky130_fd_sc_hd`)**.
@@ -79,5 +78,3 @@ openroad -exit run_sta.tcl
 
 ### 2. Stream Out Routed DEF to GDSII
 klayout -b -r def2gds.py
-
-```
